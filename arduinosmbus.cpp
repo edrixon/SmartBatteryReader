@@ -400,6 +400,7 @@ uint16_t ArduinoSMBus::stateOfHealth() {
  * @return uint16_t 
  */
 uint16_t ArduinoSMBus::readRegister(uint8_t reg) {
+//int16_t ArduinoSMBus::readRegister(int reg) {
   Wire.beginTransmission(_batteryAddress);
   Wire.write(reg);
   Wire.endTransmission();
@@ -423,6 +424,7 @@ uint16_t ArduinoSMBus::readRegister(uint8_t reg) {
  * @param length 
  */
 void ArduinoSMBus::readBlock(uint8_t reg, uint8_t* data, uint8_t length) {
+//void ArduinoSMBus::readBlock(int reg, uint8_t* data, uint8_t length) {
   Wire.beginTransmission(_batteryAddress);
   Wire.write(reg);
   Wire.endTransmission(false);

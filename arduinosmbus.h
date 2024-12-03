@@ -124,6 +124,8 @@ private:
   uint8_t _batteryAddress;
   uint16_t readRegister(uint8_t reg);
   void readBlock(uint8_t reg, uint8_t* data, uint8_t len);
+//  uint16_t readRegister(int reg);
+//  void readBlock(int reg, uint8_t* data, uint8_t len);
 };
 
 #endif
